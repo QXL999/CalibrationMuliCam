@@ -1,0 +1,557 @@
+#include "CalibrationByAruco.h"
+#include <filesystem>
+#include <numeric>
+#include <algorithm>
+namespace fs = std::filesystem;
+using namespace aruco;
+
+ArUcoStereo::ArUcoStereo(string& ImgPathLeft, string& ImgPathRight, string& outputFilePath,
+    int& markersX, int& markersY, double& markerLength, double& markerSeparation,
+    double& focalLength, double& pixelSize)
+{
+    int imgnumLeft = Utils::GetFileNum(ImgPathLeft, ".bmp");
+    if (imgnumLeft != Utils::GetFileNum(ImgPathRight, ".bmp"))
+    {
+        cout << "左右相机图片数量不一致" << endl;
+        return;
+    }
+
+    ImgNum = imgnumLeft;
+    m_ImgPathLeft = ImgPathLeft;
+    m_ImgPathRight = ImgPathRight;
+    m_markersX = markersX;
+    m_markersY = markersY;
+    m_markerLength = markerLength;
+    m_markerSeparation = markerSeparation;
+
+    m_focalLength = focalLength;
+    m_pixelSize = pixelSize;
+
+    double fx_pixels = m_focalLength / m_pixelSize;
+    double fy_pixels = m_focalLength / m_pixelSize;
+
+    // 设置内参初值
+    m_CaliResult.cameraMatrix1.at<double>(0, 0) = fx_pixels;
+    m_CaliResult.cameraMatrix1.at<double>(1, 1) = fy_pixels;
+    m_CaliResult.cameraMatrix1.at<double>(0, 2) = 640;  // 临时，稍后更新
+    m_CaliResult.cameraMatrix1.at<double>(1, 2) = 480;
+
+    m_CaliResult.cameraMatrix2.at<double>(0, 0) = fx_pixels;
+    m_CaliResult.cameraMatrix2.at<double>(1, 1) = fy_pixels;
+    m_CaliResult.cameraMatrix2.at<double>(0, 2) = 640;
+    m_CaliResult.cameraMatrix2.at<double>(1, 2) = 480;
+}
+
+bool ArUcoStereo::detectArucoMarkers(Mat& image, Ptr<aruco::Dictionary>& dictionary,
+    vector<int>& markerIds, vector<vector<Point2f>>& markerCorners,
+    const Mat& cameraMatrix, const Mat& distCoeffs)
+{
+    vector<vector<Point2f>> rejected;
+    Ptr<aruco::DetectorParameters> detectorParams = aruco::DetectorParameters::create();
+    detectorParams->cornerRefinementMethod = aruco::CORNER_REFINE_SUBPIX;
+
+    Mat gray;
+    if (image.channels() == 3)
+        cvtColor(image, gray, COLOR_BGR2GRAY);
+    else
+        gray = image;
+
+    aruco::detectMarkers(gray, dictionary, markerCorners, markerIds, detectorParams, rejected);
+
+    if (!cameraMatrix.empty() && !distCoeffs.empty())
+    {
+        aruco::refineDetectedMarkers(gray, m_board, markerCorners, markerIds, rejected);
+    }
+
+    return !markerIds.empty();
+}
+
+bool ArUcoStereo::detectAllMarkers(vector<vector<Point3f>>& allObjPoints,
+    vector<vector<Point2f>>& allImgPoints1,
+    vector<vector<Point2f>>& allImgPoints2,
+    Ptr<aruco::Dictionary>& dictionary,
+    Ptr<aruco::GridBoard>& board)
+{
+    vector<string> leftImages, rightImages;
+    glob(m_ImgPathLeft, leftImages);
+    glob(m_ImgPathRight, rightImages);
+
+    if (leftImages.size() != rightImages.size() || leftImages.empty())
+    {
+        cerr << "左右图像数量不一致或为空" << endl;
+        return false;
+    }
+
+    // 直接使用 board->objPoints，它是一个 vector<vector<Point3f>>，每个标记对应一个 vector<Point3f>(4)
+    auto& boardObjPoints = board->objPoints;
+    //标定板x和y方向颠倒轴方向与实际相反，需要交换角点顺序
+  //  for (auto& objPoints : boardObjPoints)
+  //  {
+		//std::vector<Point3f> objPointsCopy = objPoints; // 复制原始数据
+  //      objPoints[0] = objPointsCopy[1];
+  //      objPoints[1] = objPointsCopy[2];
+  //      objPoints[2] = objPointsCopy[3];
+  //      objPoints[3] = objPointsCopy[0];
+  //  }
+
+    for (size_t i = 0; i < leftImages.size(); i++)
+    {
+        Mat img1 = imread(leftImages[i]);
+        Mat img2 = imread(rightImages[i]);
+
+        if (img1.empty() || img2.empty())
+        {
+            cerr << "读取图像失败: " << leftImages[i] << " 或 " << rightImages[i] << endl;
+            continue;
+        }
+
+        // 更新图像尺寸和内参主点
+        if (m_CaliResult.imageSize != img1.size())
+        {
+            m_CaliResult.imageSize = img1.size();
+            m_CaliResult.cameraMatrix1.at<double>(0, 2) = m_CaliResult.imageSize.width / 2.0;
+            m_CaliResult.cameraMatrix1.at<double>(1, 2) = m_CaliResult.imageSize.height / 2.0;
+            m_CaliResult.cameraMatrix2.at<double>(0, 2) = m_CaliResult.imageSize.width / 2.0;
+            m_CaliResult.cameraMatrix2.at<double>(1, 2) = m_CaliResult.imageSize.height / 2.0;
+        }
+
+        // 检测左图标记
+        vector<int> ids1;
+        vector<vector<Point2f>> corners1;
+        bool found1 = detectArucoMarkers(img1, dictionary, ids1, corners1,
+            m_CaliResult.cameraMatrix1, m_CaliResult.distCoeffs1);
+
+        m_CalIntricParams.allMarkerCorners1.push_back(corners1);
+        m_CalIntricParams.allMarkerIds1.push_back(ids1);
+
+        // 检测右图标记
+        vector<int> ids2;
+        vector<vector<Point2f>> corners2;
+        bool found2 = detectArucoMarkers(img2, dictionary, ids2, corners2,
+            m_CaliResult.cameraMatrix2, m_CaliResult.distCoeffs2);
+
+        m_CalIntricParams.allMarkerCorners2.push_back(corners2);
+        m_CalIntricParams.allMarkerIds2.push_back(ids2);
+
+        if (!found1 || !found2)
+        {
+            cout << "图像对 " << i << " 检测到标记不足，跳过" << endl;
+            continue;
+        }
+
+        // 构建左图标记 ID -> 角点 的映射
+        unordered_map<int, vector<Point2f>> leftMap;
+        vector<vector<Point3f>> Ids1_ObjPoints;
+        for (size_t j = 0; j < ids1.size(); j++)
+        {
+            leftMap[ids1[j]] = corners1[j];
+
+            vector<Point3f> Id_ObjPoints = boardObjPoints[ids1[j]];
+			Ids1_ObjPoints.push_back(Id_ObjPoints);
+        }
+        m_CalIntricParams.allObjPoints1.push_back(Ids1_ObjPoints);
+
+        // 构建右图标记 ID -> 角点 的映射
+        unordered_map<int, vector<Point2f>> rightMap;
+        vector<vector<Point3f>> Ids2_ObjPoints;
+        for (size_t j = 0; j < ids2.size(); j++)
+        {
+            rightMap[ids2[j]] = corners2[j];
+
+            vector<Point3f> Id_ObjPoints = boardObjPoints[ids2[j]];
+            Ids2_ObjPoints.push_back(Id_ObjPoints);
+        }
+        m_CalIntricParams.allObjPoints2.push_back(Ids2_ObjPoints);
+        // 找出左右图共有的标记 ID
+        vector<int> commonIds;
+        for (const auto& item : leftMap)
+        {
+            if (rightMap.find(item.first) != rightMap.end())
+                commonIds.push_back(item.first);
+        }
+
+        if (commonIds.empty())
+        {
+            cout << "图像对 " << i << " 无共同标记 ID" << endl;
+            continue;
+        }
+
+        // 存储该图像对的匹配点（展平每个标记的4个角点）
+        vector<Point3f> objPts;
+        vector<Point2f> imgPts1, imgPts2;
+
+        for (int id : commonIds)
+        {
+            // 该标记的 4 个 3D 角点（直接使用 boardObjPoints[id]）
+            const auto& marker3d = boardObjPoints[id]; // vector<Point3f> 大小为4
+            // 该标记在左右图中的 4 个图像角点
+            const auto& marker2d_left = leftMap[id];
+            const auto& marker2d_right = rightMap[id];
+
+            // 确保每个标记都有4个角点
+            if (marker3d.size() != 4 || marker2d_left.size() != 4 || marker2d_right.size() != 4)
+            {
+                cerr << "标记 " << id << " 角点数量异常，跳过" << endl;
+                continue;
+            }
+
+            for (int k = 0; k < 4; k++)
+            {
+                objPts.push_back(marker3d[k] * 1000.0); // 转换为毫米
+                imgPts1.push_back(marker2d_left[k]);
+                imgPts2.push_back(marker2d_right[k]);
+            }
+        }
+        if (objPts.empty())
+        {
+            cout << "图像对 " << i << " 无有效匹配点，跳过" << endl;
+            continue;
+        }
+
+        allObjPoints.push_back(objPts);
+        allImgPoints1.push_back(imgPts1);
+        allImgPoints2.push_back(imgPts2);
+		// 可视化匹配结果
+		DrawImgsWithCorners(img1, img2, leftMap, rightMap, corners1, corners2, ids1, ids2, commonIds, i);
+    }
+
+    return !allObjPoints.empty();
+}
+void ArUcoStereo::DrawImgsWithCorners(const Mat& img1, const Mat& img2,
+    const unordered_map<int, vector<Point2f>>& leftMap,
+    const unordered_map<int, vector<Point2f>>& rightMap,
+    const vector<vector<Point2f>>& corners1, const vector<vector<Point2f>>& corners2,
+    const vector<int>& ids1, const vector<int>& ids2,
+    const vector<int>& commonIds,
+    int i)
+{
+    //可选：保存可视化结果
+     // 绘制配准结果
+    Mat img1Copy_canvas = img1.clone();
+    Mat img2Copy_canvas = img2.clone();
+    // 如果原图是灰度图，转换为BGR以便绘制彩色线条
+    if (img1.channels() == 1) cvtColor(img1Copy_canvas, img1Copy_canvas, COLOR_GRAY2BGR);
+    if (img2.channels() == 1) cvtColor(img2Copy_canvas, img2Copy_canvas, COLOR_GRAY2BGR);
+
+    Mat canvas;
+    hconcat(img1Copy_canvas, img2Copy_canvas, canvas); // 左右拼接
+
+    // 遍历所有共同标记 ID，绘制每个标记的四个角点的连线
+    for (int id : commonIds)
+    {
+        // 获取该标记在左右图中的四个角点
+        const auto& marker2d_left = leftMap.at(id);
+        const auto& marker2d_right = rightMap.at(id);
+
+        for (int k = 0; k < 4; k++)
+        {
+            // 左图角点坐标
+            Point2f ptLeft = marker2d_left[k];
+            // 右图角点坐标（需要加上左图的宽度，使其在画布上正确显示）
+            Point2f ptRight = marker2d_right[k] + Point2f((float)img1.cols, 0);
+
+            // 绘制连线（绿色）
+            line(canvas, ptLeft, ptRight, Scalar(0, 255, 0), 2);
+
+            // 在左图角点绘制红色圆点，并标注标记ID和角点索引
+            circle(canvas, ptLeft, 3, Scalar(0, 0, 255), -1);
+            putText(canvas, to_string(id) + "-" + to_string(k), ptLeft,
+                FONT_HERSHEY_SIMPLEX, 0.4, Scalar(255, 0, 0), 1);
+
+            // 在右图角点绘制红色圆点（可选）
+            circle(canvas, ptRight, 3, Scalar(0, 0, 255), -1);
+        }
+    }
+    // 保存可视化结果
+    imwrite("matched_" + to_string(i+1) + ".bmp", canvas);
+    //含所有检测到的标记（不区分左右图是否都有）
+    Mat img1Copy = img1.clone();
+    Mat img2Copy = img2.clone();
+    aruco::drawDetectedMarkers(img1Copy, corners1, ids1);
+    aruco::drawDetectedMarkers(img2Copy, corners2, ids2);
+    imwrite("left_" + to_string(i+1) + ".bmp", img1Copy);
+    imwrite("right_" + to_string(i+1) + ".bmp", img2Copy);
+}
+
+void ArUcoStereo::ProcessInriData(vector<vector<Point3f>>& allObjPoints1, 
+    vector<vector<Point3f>>& allObjPoints2,
+    vector<vector<Point2f>>& allImgPoints1,
+    vector<vector<Point2f>>& allImgPoints2)
+{
+    for (size_t i = 0; i < m_CalIntricParams.allMarkerCorners1.size(); ++i)
+    {
+        std::vector<cv::Point3f> objPoints;
+        std::vector<cv::Point2f> imgPoints1;
+        for (size_t j = 0; j < m_CalIntricParams.allMarkerCorners1[i].size(); ++j)
+        {
+            for (size_t k = 0; k < 4; ++k)
+            {
+                //// 将标定板坐标转换为毫米
+                m_CalIntricParams.allObjPoints1[i][j][k].x *= 1000.0;
+                m_CalIntricParams.allObjPoints1[i][j][k].y *= 1000.0;
+                m_CalIntricParams.allObjPoints1[i][j][k].z *= 1000.0;
+
+                objPoints.push_back(m_CalIntricParams.allObjPoints1[i][j][k]);
+                imgPoints1.push_back(m_CalIntricParams.allMarkerCorners1[i][j][k]);
+            }
+        }
+        allObjPoints1.push_back(objPoints);
+		allImgPoints1.push_back(imgPoints1);
+	}
+    for (size_t i = 0; i < m_CalIntricParams.allMarkerCorners2.size(); ++i)
+    {
+        std::vector<cv::Point3f> objPoints;
+        std::vector<cv::Point2f> imgPoints2;
+        for (size_t j = 0; j < m_CalIntricParams.allMarkerCorners2[i].size(); ++j)
+        {
+            for (size_t k = 0; k < 4; ++k)
+            {
+                //// 将标定板坐标转换为毫米
+                m_CalIntricParams.allObjPoints2[i][j][k].x *= 1000.0;
+                m_CalIntricParams.allObjPoints2[i][j][k].y *= 1000.0;
+                m_CalIntricParams.allObjPoints2[i][j][k].z *= 1000.0;
+                objPoints.push_back(m_CalIntricParams.allObjPoints2[i][j][k]);
+                imgPoints2.push_back(m_CalIntricParams.allMarkerCorners2[i][j][k]);
+            }
+        }
+        allObjPoints2.push_back(objPoints);
+        allImgPoints2.push_back(imgPoints2);
+    }
+}
+void ArUcoStereo::calculateIntrinsic()
+{
+    cout << "初始相机矩阵:" << endl;
+    cout << "fx: " << m_CaliResult.cameraMatrix1.at<double>(0, 0) << " px" << endl;
+    cout << "fy: " << m_CaliResult.cameraMatrix1.at<double>(1, 1) << " px" << endl;
+
+    //处理内参标定数据
+    vector<vector<Point3f>> allObjPoints1, allObjPoints2;
+    vector<vector<Point2f>> allImgPoints1, allImgPoints2;
+    ProcessInriData(allObjPoints1, allObjPoints2, allImgPoints1, allImgPoints2);
+
+    // 左相机单目标定
+    vector<Mat> rvecs1, tvecs1;
+    double rms1 = calibrateCamera(allObjPoints1, allImgPoints1,
+        m_CaliResult.imageSize, m_CaliResult.cameraMatrix1, m_CaliResult.distCoeffs1,
+        rvecs1, tvecs1, CALIB_USE_INTRINSIC_GUESS);
+    cout << "左相机内参标定 RMS = " << rms1 << endl;
+    cout << "左相机内参结果:\n" << m_CaliResult.cameraMatrix1 << endl;
+    cout << "左相机畸变系数:\n" << m_CaliResult.distCoeffs1 << endl;
+
+    // 右相机单目标定
+    vector<Mat> rvecs2, tvecs2;
+    double rms2 = calibrateCamera(allObjPoints2, allImgPoints2,
+        m_CaliResult.imageSize, m_CaliResult.cameraMatrix2, m_CaliResult.distCoeffs2,
+        rvecs2, tvecs2, CALIB_USE_INTRINSIC_GUESS);
+    cout << "右相机内参标定 RMS = " << rms2 << endl;
+    cout << "右相机内参结果:\n" << m_CaliResult.cameraMatrix2 << endl;
+    cout << "右相机畸变系数:\n" << m_CaliResult.distCoeffs2 << endl;
+}
+
+vector<vector<Point3f>> ArUcoStereo::convertToCamera1Coordinate(double& overall_rms,
+    const vector<vector<Point3f>>& objPoints,
+    const vector<vector<Point2f>>& imagePoints1,
+    const Mat& cameraMatrix1, const Mat& distCoeffs1)
+{
+    vector<vector<Point3f>> objPointsInCam1;
+    double total_reproj_error = 0.0;
+    int total_points = 0;
+    vector<double> per_image_errors;
+
+    cout << "=== PnP 坐标转换及误差分析 ===" << endl;
+
+    for (size_t i = 0; i < objPoints.size(); ++i)
+    {
+        Mat rvec, tvec;
+        bool success = solvePnP(objPoints[i], imagePoints1[i], cameraMatrix1, distCoeffs1, rvec, tvec);
+
+        if (!success)
+        {
+            cerr << "PnP 失败，图像对 " << i << endl;
+            continue;
+        }
+
+        Mat R_board_to_cam1;
+        Rodrigues(rvec, R_board_to_cam1);
+
+        vector<Point3f> pointsInCam1;
+        vector<Point2f> projected_points;
+        projectPoints(objPoints[i], rvec, tvec, cameraMatrix1, distCoeffs1, projected_points);
+
+        double image_error = 0.0;
+
+        for (size_t j = 0; j < objPoints[i].size(); ++j)
+        {
+            // 转换到相机1坐标系
+            Mat pt_board = (Mat_<double>(3, 1) << objPoints[i][j].x, objPoints[i][j].y, objPoints[i][j].z);
+            Mat pt_cam1 = R_board_to_cam1 * pt_board + tvec;
+            pointsInCam1.push_back(Point3f(pt_cam1.at<double>(0), pt_cam1.at<double>(1), pt_cam1.at<double>(2)));
+
+            double error = norm(imagePoints1[i][j] - projected_points[j]);
+            image_error += error;
+            total_reproj_error += error;
+        }
+
+        total_points += objPoints[i].size();
+        double rms_error = image_error / objPoints[i].size();
+        per_image_errors.push_back(rms_error);
+        objPointsInCam1.push_back(pointsInCam1);
+
+        cout << "图像 " << i << ": " << objPoints[i].size() << " 个点, RMS 平均误差: " << rms_error << " px" << endl;
+    }
+
+    if (total_points > 0)
+    {
+        overall_rms = total_reproj_error / total_points;
+        double max_error = *max_element(per_image_errors.begin(), per_image_errors.end());
+        double min_error = *min_element(per_image_errors.begin(), per_image_errors.end());
+        double avg_error = accumulate(per_image_errors.begin(), per_image_errors.end(), 0.0) / per_image_errors.size();
+
+        cout << "\n=== 总体统计 ===" << endl;
+        cout << "总点数: " << total_points << endl;
+        cout << "总图像数: " << objPointsInCam1.size() << endl;
+        cout << "标定板->相机1, 平均重投影误差: " << overall_rms << " px, "
+            << "最小: " << min_error << " px, 最大: " << max_error << " px" << endl;
+    }
+
+    return objPointsInCam1;
+}
+
+void ArUcoStereo::RunBundleAdjustment(const vector<vector<Point3f>>& objectPoints,
+    const vector<vector<Point2f>>& imagePoints1,
+    const vector<vector<Point2f>>& imagePoints2)
+{
+    ceres::Problem problem;
+
+    double rms_pnp_cam1 = 0.0;
+    vector<vector<Point3f>> Cam1_ObjPoints = convertToCamera1Coordinate(rms_pnp_cam1,
+        objectPoints, imagePoints1, m_CaliResult.cameraMatrix1, m_CaliResult.distCoeffs1);
+
+    Mat R1_mat = Mat::eye(3, 3, CV_64F);
+    Mat T1_mat = Mat::zeros(3, 1, CV_64F);
+    Mat R2_mat = m_CaliResult.R.clone();
+    Mat T2_mat = m_CaliResult.T.clone();
+
+    for (size_t i = 0; i < Cam1_ObjPoints.size(); ++i)
+    {
+        for (size_t j = 0; j < Cam1_ObjPoints[i].size(); ++j)
+        {
+            Point3f objectPoint = Cam1_ObjPoints[i][j];
+            Point2f imagePoint1 = imagePoints1[i][j];
+            Point2f imagePoint2 = imagePoints2[i][j];
+
+            ceres::CostFunction* costFunction1 = ReprojectionError::Create(objectPoint, imagePoint1,
+                m_CaliResult.cameraMatrix1, m_CaliResult.distCoeffs1);
+            ceres::CostFunction* costFunction2 = ReprojectionError::Create(objectPoint, imagePoint2,
+                m_CaliResult.cameraMatrix2, m_CaliResult.distCoeffs2);
+
+            problem.AddResidualBlock(costFunction1, nullptr, R1_mat.ptr<double>(), T1_mat.ptr<double>());
+            problem.AddResidualBlock(costFunction2, nullptr, R2_mat.ptr<double>(), T2_mat.ptr<double>());
+        }
+    }
+
+    problem.SetParameterBlockConstant(R1_mat.ptr<double>());
+    problem.SetParameterBlockConstant(T1_mat.ptr<double>());
+
+    ceres::Solver::Options options;
+    options.linear_solver_type = ceres::DENSE_SCHUR;
+    options.max_num_iterations = 100;
+    options.function_tolerance = 1e-8;
+    options.gradient_tolerance = 1e-10;
+
+    ceres::Solver::Summary summary;
+    ceres::Solve(options, &problem, &summary);
+
+    cout << summary.BriefReport() << endl;
+
+    cout << "\n优化后重投影误差:" << endl;
+    double BA_ReProErr = computeStereoReprojectionError(Cam1_ObjPoints, imagePoints1, imagePoints2,
+        m_CaliResult.cameraMatrix1, m_CaliResult.distCoeffs1,
+        m_CaliResult.cameraMatrix2, m_CaliResult.distCoeffs2,
+        m_CaliResult.R, m_CaliResult.T);
+
+    BA_ReProErr = BA_ReProErr - rms_pnp_cam1;
+    cout << "BA 优化后误差改善: " << BA_ReProErr << endl;
+
+    if (BA_ReProErr < m_CaliResult.rms)
+    {
+        m_CaliResult.rms = BA_ReProErr;
+        m_CaliResult.R = R2_mat.clone();
+        m_CaliResult.T = T2_mat.clone();
+    }
+}
+
+double ArUcoStereo::computeStereoReprojectionError(const vector<vector<Point3f>>& objectPoints,
+    const vector<vector<Point2f>>& imagePoints1,
+    const vector<vector<Point2f>>& imagePoints2,
+    const Mat& cameraMatrix1, const Mat& distCoeffs1,
+    const Mat& cameraMatrix2, const Mat& distCoeffs2,
+    const Mat& R, const Mat& T)
+{
+    Mat R1 = Mat::eye(3, 3, CV_64F);
+    Mat T1 = Mat::zeros(3, 1, CV_64F);
+
+    double totalError = 0.0;
+    int totalPoints = 0;
+
+    for (size_t i = 0; i < objectPoints.size(); i++)
+    {
+        vector<Point2f> projected1, projected2;
+        projectPoints(objectPoints[i], R1, T1, cameraMatrix1, distCoeffs1, projected1);
+        projectPoints(objectPoints[i], R, T, cameraMatrix2, distCoeffs2, projected2);
+
+        for (size_t j = 0; j < objectPoints[i].size(); j++)
+        {
+            double err1 = norm(imagePoints1[i][j] - projected1[j]);
+            double err2 = norm(imagePoints2[i][j] - projected2[j]);
+            totalError += err1 * err1 + err2 * err2;
+        }
+        totalPoints += objectPoints[i].size() * 2;
+    }
+
+    double overallRMSE = sqrt(totalError / totalPoints);
+    cout << "立体重投影 RMS 误差: " << overallRMSE << " 像素" << endl;
+    return overallRMSE;
+}
+
+CaliResult ArUcoStereo::stereoCalibration(Ptr<aruco::Dictionary>& dictionary, Ptr<aruco::GridBoard>& board)
+{
+    vector<vector<Point3f>> allObjPoints;
+    vector<vector<Point2f>> allImgPoints1, allImgPoints2;
+    m_board = board;
+    bool success = detectAllMarkers(allObjPoints, allImgPoints1, allImgPoints2, dictionary, board);
+
+    if (!success || allObjPoints.empty())
+    {
+        cout << "没有检测到足够的标记点，标定失败" << endl;
+        return m_CaliResult;
+    }
+
+    // 单目标定（内参）
+    calculateIntrinsic();
+
+    // 双目标定（外参）
+    double rms = stereoCalibrate(
+        allObjPoints, allImgPoints1, allImgPoints2,
+        m_CaliResult.cameraMatrix1, m_CaliResult.distCoeffs1,
+        m_CaliResult.cameraMatrix2, m_CaliResult.distCoeffs2,
+        m_CaliResult.imageSize,
+        m_CaliResult.R, m_CaliResult.T, m_CaliResult.E, m_CaliResult.F,
+        CALIB_FIX_INTRINSIC,
+        TermCriteria(TermCriteria::COUNT + TermCriteria::EPS, 100, 1e-10)
+    );
+
+    cout << "双目标定 RMS 误差: " << rms << endl;
+    m_CaliResult.rms = rms;
+
+    cout << "开始光束平差优化..." << endl;
+    RunBundleAdjustment(allObjPoints, allImgPoints1, allImgPoints2);
+
+    // 计算变换矩阵（从 cam2 到 cam1 的逆）
+    Mat transformMatrix = Mat::eye(4, 4, CV_64F);
+    m_CaliResult.R.copyTo(transformMatrix(Rect(0, 0, 3, 3)));
+    m_CaliResult.T.copyTo(transformMatrix(Rect(3, 0, 1, 3)));
+    m_CaliResult.transformMatrix = Utils::invertTransform(transformMatrix);
+
+    return m_CaliResult;
+}

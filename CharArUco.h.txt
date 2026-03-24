@@ -1,0 +1,140 @@
+#pragma once
+#ifndef _CHARARUCO_H_
+#define _CHARARUCO_H_
+
+#include<ceres/ceres.h>
+#include <opencv2/opencv.hpp>
+#include<opencv2/aruco.hpp>
+#include <opencv2/aruco/charuco.hpp>
+#include <iostream>
+#include<vector>
+#include<opencv2/core.hpp>
+#include<string>
+#include"common.hpp"
+//#include <map>
+
+using namespace cv;
+using namespace std;
+
+
+//存储每张图像检测到的所有角点，用于相机内参标定
+struct CalibrationIntricParams
+{
+    vector<vector<Point2f>> allCorners1, allCorners2;
+    vector<vector<int>> allIds1, allIds2;
+    vector<vector<Point3f>> objPoints1, objPoints2;
+
+};
+
+
+
+
+class __declspec(dllexport)CharArUco
+{
+public:
+
+    //获取左右相机拍摄的图像路径，标定板尺寸，横纵角点数量，角点间距,内参,相机焦距，像元尺寸
+    CharArUco(string& ImgPathLeft, string& ImgPathRight, string& outputFilePath, int& boardWidth, int& boardHeight, float& CheckerSize, float& MarkerSize, double& focalLength, double& pixelSize);
+
+    /**
+    * @brief stereoCalibration函数功能：计算标定结果：计算相机内参、畸变系数、旋转矩阵和平移向量
+    * return 返回值带有标定所需的结果：内参，畸变，外参
+    * @note 该函数为此算法的接口！：
+    * */
+    //双目标定,内参，外参，
+    CaliResult stereoCalibration(Ptr<aruco::Dictionary>& dictionary, Ptr<aruco::CharucoBoard>& board);
+
+     /**
+     * @brief detectCharucoCorners函数功能：检测图像所有的ChArUco角点
+     * @param image 第一个相机视角下检测到的公共角点坐标集合
+     * @param board 第二个相机视角下检测到的公共角点坐标集合
+     * @param charucoIds  检测到的公共角点ID集合
+     *                     - 外层vector：每对图像一组ID
+     *                     - 内层vector：单张图像中角点对应的ID
+     *                     - ID与角点坐标一一对应
+     *
+     * @param charucoCorners ArUco标记字典对象指针
+     *                  用于定义Charuco棋盘使用的标记类型和编码方式
+     *                  通常通过aruco::getPredefinedDictionary()获取
+     *
+     * return 返回值：可检测到公共角点坐标和ID，参数以引用方式传递
+     */
+    bool detectCharucoCorners(Mat& image, Ptr<aruco::CharucoBoard>& board, vector<int>& charucoIds, vector<Point2f>& charucoCorners, const Mat& cameraMatrix = Mat(), const Mat& distCoeffs = Mat());
+    /**
+     * @brief detectAllCharucoCorners函数功能：检测所有图像对中的Charuco棋盘角点和ID
+     * @param allCharucoCorners1 第一个相机视角下检测到的公共角点坐标集合
+     * @param allCharucoCorners2 第二个相机视角下检测到的公共角点坐标集合
+     * @param allCharucoIds  检测到的公共角点ID集合
+     *                     - 外层vector：每对图像一组ID
+     *                     - 内层vector：单张图像中角点对应的ID
+     *                     - ID与角点坐标一一对应
+     *
+     * @param dictionary ArUco标记字典对象指针
+     *                  用于定义Charuco棋盘使用的标记类型和编码方式
+     *                  通常通过aruco::getPredefinedDictionary()获取
+     * @note 使用前需要确保：
+     *       1. 已正确创建CharucoBoard对象
+     *       2. 图像对已经过预处理（去畸变、对齐等）
+     *       3. 两个相机的图像在时间上已同步
+     * 
+     * return 返回值：可检测到公共角点坐标和ID，参数以引用方式传递
+     */
+    bool detectAllCharucoCorners(vector<vector<Point3f>>& allPoints3D, vector<vector<Point2f>>& RegisCharucoCorners1, vector<vector<Point2f>>& RegisCharucoCorners2, Ptr<aruco::Dictionary>& dictionary);
+    
+    /**
+    * @brief calculateIntriinsic函数功能：计算相机内参
+    * @note  虽然cv::stereoCalibrate函数可同时计算内参与外参，但仅用配准的点估计得到的内参误差较大，此处单独计算。
+    */
+    void calculateIntriinsic();
+    /**
+     * @brief convertToCamera1Coordinate函数功能：将标定板坐标系的3D点转换到相机坐标系
+     *                                            主要用于BA优化前对RegisObjPoints进行处理
+     * @param RegisCharucoCorners1： 相机1 配准后的角点图像坐标
+     * @param cameraMatrix1： 相机1 内参矩阵
+     * @param distCoeffs1：   相机1 畸变系数
+     * 
+     * @return 返回值：相机1坐标系下的3D点
+     */
+    vector<vector<Point3f>> convertToCamera1Coordinate(double& overall_rms,const vector<vector<Point3f>>& RegisObjPoints,const vector<vector<Point2f>>& RegisCharucoCorners1,const Mat& cameraMatrix1, const Mat& distCoeffs1);
+    /**
+     * @brief RunBundleAdjustment函数功能：执行光束平差优化算法
+     * @param RegisObjPoints：配准后的角点3D坐标（标定板坐标系）
+     * @param RegisCharucoCorners1： 相机1 配准后的图像角点
+     * @param RegisCharucoCorners2： 相机2 配准后的图像角点
+     *
+     * @return 返回值：相机1坐标系下的3D点
+     */
+    void RunBundleAdjustment(const vector<vector<Point3f>>& RegisObjPoints, const vector<vector<Point2f>>& RegisCharucoCorners1, const vector<vector<Point2f>>& RegisCharucoCorners2);
+    
+    double computeStereoReprojectionError(const vector<vector<Point3f>>& objectPoints,
+        const vector<vector<Point2f>>& imagePoints1,
+        const vector<vector<Point2f>>& imagePoints2,
+        const Mat& cameraMatrix1, const Mat& distCoeffs1,
+        const Mat& cameraMatrix2, const Mat& distCoeffs2,
+        const Mat& R, const Mat& T);
+
+    //将corners2和ids2对应为哈希表的形式
+    static unordered_map<int, Point2f>cornersMap(vector<int>ids2, vector<Point2f>corners2);
+    //Mat invertTransform(const Mat& transform);
+    // 保存标定结果
+    //void saveCalibrationResults(const string& filename, const CaliResult& params);
+    ~CharArUco();
+
+private:
+
+    string m_ImgPathLeft;
+    string m_ImgPathRight;
+    int m_boardWidth;       //角点数量
+    int m_boardHeight;
+    float m_CheckerSize;    //棋盘格角点间距
+    float m_MarkerSize;     //marker尺寸
+    int ImgNum;
+    CaliResult m_CaliResult;
+    CalibrationIntricParams m_CalIntricParams;
+    double m_focalLength;
+    double m_pixelSize;
+};
+
+#endif // !_CHARARUCO_H_
+
+

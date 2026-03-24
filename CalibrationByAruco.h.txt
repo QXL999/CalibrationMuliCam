@@ -1,0 +1,157 @@
+#pragma once
+#include <ceres/ceres.h>
+#include <opencv2/opencv.hpp>
+#include <opencv2/aruco.hpp>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <unordered_map>
+#include "common.hpp"
+#include <opencv2/aruco/charuco.hpp>
+
+using namespace cv;
+using namespace std;
+
+// 存储每张图像检测到的所有标记角点，用于相机内参标定
+struct ArucoIntricParams
+{
+    vector<vector<vector<Point2f>>> allMarkerCorners1;  // 左相机所有标记的角点
+    vector<vector<vector<Point2f>>> allMarkerCorners2;  // 右相机所有标记的角点
+    vector<vector<int>> allMarkerIds1;                  // 左相机标记ID
+    vector<vector<int>> allMarkerIds2;                  // 右相机标记ID
+    vector<vector<vector<Point3f>>> allObjPoints1;      // 左相机所有角点对应的3D点
+    vector<vector<vector<Point3f>>> allObjPoints2;      // 右相机所有角点对应的3D点
+};
+
+
+class __declspec(dllexport)ArUcoStereo
+{
+public:
+    // 构造函数
+    ArUcoStereo(string& ImgPathLeft, string& ImgPathRight, string& outputFilePath,
+        int& markersX, int& markersY, double& markerLength, double& markerSeparation,
+        double& focalLength, double& pixelSize);
+
+    /**
+     * @brief 双目标定主接口
+     * @param dictionary ArUco 字典
+     * @param board ArUco 棋盘板对象
+     * @return 标定结果
+     */
+    CaliResult stereoCalibration(Ptr<aruco::Dictionary>& dictionary, Ptr<aruco::GridBoard>& board);
+
+private:
+    /**
+     * @brief 检测单张图像中的 ArUco 标记
+     * @param image 输入图像
+     * @param dictionary ArUco 字典
+     * @param markerIds 检测到的标记 ID
+     * @param markerCorners 检测到的标记角点
+     * @param cameraMatrix 相机内参矩阵
+     * @param distCoeffs 相机畸变系数
+     */
+    bool detectArucoMarkers(Mat& image, Ptr<aruco::Dictionary>& dictionary,
+        vector<int>& markerIds, vector<vector<Point2f>>& markerCorners,
+        const Mat& cameraMatrix = Mat(), const Mat& distCoeffs = Mat());
+
+    /**
+     * @brief 检测所有图像对，并利用 matchImagePoints 生成匹配的 2D-3D 点对
+     * @param allObjPoints 存储所有图像对中的 3D 点
+     * @param allImgPoints1 存储所有图像对中左相机的 2D 点
+     * @param allImgPoints2 存储所有图像对中右相机的 2D 点
+     * @param dictionary ArUco 字典
+     * @param board ArUco 棋盘板对象
+     */
+    bool detectAllMarkers(vector<vector<Point3f>>& allObjPoints,
+        vector<vector<Point2f>>& allImgPoints1,
+        vector<vector<Point2f>>& allImgPoints2,
+        Ptr<aruco::Dictionary>& dictionary,
+        Ptr<aruco::GridBoard>& board);
+
+    /**
+     * @brief 计算相机内参（单目标定）
+     */
+    //void calculateIntrinsic(const vector<vector<Point3f>>& allObjPoints,
+    //    const vector<vector<Point2f>>& allImgPoints1,
+    //    const vector<vector<Point2f>>& allImgPoints2);
+    void calculateIntrinsic();
+
+    /**
+    * @brief 处理相机内参数据（单目标定）
+    * @param allObjPoints 存储所有图像对中的 3D 点
+    * @param allImgPoints1 存储所有图像对中左相机的 2D 点
+    * @param allImgPoints2 存储所有图像对中右相机的 2D 点
+    * @param cameraMatrix 相机内参矩阵
+    * 
+    */
+    void ProcessInriData(vector<vector<Point3f>>& allObjPoints1,
+                         vector<vector<Point3f>>& allObjPoints2,
+                         vector<vector<Point2f>>& allImgPoints1,
+                         vector<vector<Point2f>>& allImgPoints2);
+    /**
+     * @brief 将标定板坐标系下的 3D 点转换到相机1坐标系（用于 BA）
+     * @param overall_rms 重投影误差
+     * @param objPoints 标定板坐标系下的 3D 点
+     * @param imagePoints1 相机1检测到的 2D 点
+     * @param cameraMatrix1 相机1内参矩阵
+     * @return 转换后的 3D 点
+     */
+    vector<vector<Point3f>> convertToCamera1Coordinate(double& overall_rms,
+        const vector<vector<Point3f>>& objPoints,
+        const vector<vector<Point2f>>& imagePoints1,
+        const Mat& cameraMatrix1, const Mat& distCoeffs1);
+
+    /**
+     * @brief 执行光束平差优化
+     */
+    void RunBundleAdjustment(const vector<vector<Point3f>>& objectPoints,
+        const vector<vector<Point2f>>& imagePoints1,
+        const vector<vector<Point2f>>& imagePoints2);
+
+    /**
+     * @brief 计算立体重投影误差
+     * param objectPoints 3D点
+     * param imagePoints1 左相机2D点
+     * param imagePoints2 右相机2D点
+     * param cameraMatrix1 左相机内参
+     * param distCoeffs1 左相机畸变系数
+     * param cameraMatrix2 右相机内参
+     * param distCoeffs2 右相机畸变系数
+     * param R 旋转矩阵
+     * param T 平移向量
+     * return 重投影误差
+     */
+    double computeStereoReprojectionError(const vector<vector<Point3f>>& objectPoints,
+        const vector<vector<Point2f>>& imagePoints1,
+        const vector<vector<Point2f>>& imagePoints2,
+        const Mat& cameraMatrix1, const Mat& distCoeffs1,
+        const Mat& cameraMatrix2, const Mat& distCoeffs2,
+        const Mat& R, const Mat& T);
+    /**
+     * @brief 绘制角点检测结果
+     * @param img1 左相机图像
+     * @param img2 右相机图像
+     * @param leftMap 左相机检测到的角点
+     * @param rightMap 右相机检测到的角点
+     */
+    void DrawImgsWithCorners(const Mat& img1,const Mat& img2,
+        const unordered_map<int, vector<Point2f>>& leftMap,
+        const unordered_map<int, vector<Point2f>>& rightMap,
+        const vector<vector<Point2f>>& corners1, const vector<vector<Point2f>>& corners2,
+        const vector<int>& ids1, const vector<int>& ids2,
+        const vector<int>& commonIds,
+        int i);
+private:
+    string m_ImgPathLeft;
+    string m_ImgPathRight;
+    int m_markersX;
+    int m_markersY;
+    float m_markerLength;
+    float m_markerSeparation;
+    int ImgNum;
+    CaliResult m_CaliResult;
+    double m_focalLength;
+    double m_pixelSize;
+    Ptr<aruco::GridBoard> m_board;
+    ArucoIntricParams m_CalIntricParams;  // 内参标定数据
+};
