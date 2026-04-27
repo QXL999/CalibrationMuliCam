@@ -1,139 +1,371 @@
-﻿  CalibrationByAruco.cpp
+﻿  common.cpp
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(87,12): warning C4251: “ceres::GradientChecker::ProbeResults::residuals”:“Eigen::Matrix<double,-1,1,0,-1,1>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\Matrix.h(178,7):
       参见“Eigen::Matrix<double,-1,1,0,-1,1>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(97,25): warning C4251: “ceres::GradientChecker::ProbeResults::jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
       参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(100,25): warning C4251: “ceres::GradientChecker::ProbeResults::local_jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
       参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(103,25): warning C4251: “ceres::GradientChecker::ProbeResults::numeric_jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
       参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(106,25): warning C4251: “ceres::GradientChecker::ProbeResults::local_numeric_jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
       参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(113,17): warning C4251: “ceres::GradientChecker::ProbeResults::error_log”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(143,45): warning C4251: “ceres::GradientChecker::local_parameterizations_”:“std::vector<const ceres::LocalParameterization *,std::allocator<const ceres::LocalParameterization *>>”需要有 dll 接口以供“ceres::GradientChecker”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
       参见“std::vector<const ceres::LocalParameterization *,std::allocator<const ceres::LocalParameterization *>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(145,33): warning C4251: “ceres::GradientChecker::finite_diff_cost_function_”:“std::unique_ptr<ceres::CostFunction,std::default_delete<ceres::CostFunction>>”需要有 dll 接口以供“ceres::GradientChecker”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
       参见“std::unique_ptr<ceres::CostFunction,std::default_delete<ceres::CostFunction>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem.h(109,39): warning C4251: “ceres::GradientProblem::function_”:“std::unique_ptr<ceres::FirstOrderFunction,std::default_delete<ceres::FirstOrderFunction>>”需要有 dll 接口以供“ceres::GradientProblem”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
       参见“std::unique_ptr<ceres::FirstOrderFunction,std::default_delete<ceres::FirstOrderFunction>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem.h(110,42): warning C4251: “ceres::GradientProblem::parameterization_”:“std::unique_ptr<ceres::LocalParameterization,std::default_delete<ceres::LocalParameterization>>”需要有 dll 接口以供“ceres::GradientProblem”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
       参见“std::unique_ptr<ceres::LocalParameterization,std::default_delete<ceres::LocalParameterization>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem.h(111,29): warning C4251: “ceres::GradientProblem::scratch_”:“std::unique_ptr<double [],std::default_delete<double []>>”需要有 dll 接口以供“ceres::GradientProblem”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3486,7):
       参见“std::unique_ptr<double [],std::default_delete<double []>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem_solver.h(254,37): warning C4251: “ceres::GradientProblemSolver::Options::callbacks”:“std::vector<ceres::IterationCallback *,std::allocator<ceres::IterationCallback *>>”需要有 dll 接口以供“ceres::GradientProblemSolver::Options”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
       参见“std::vector<ceres::IterationCallback *,std::allocator<ceres::IterationCallback *>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem_solver.h(272,17): warning C4251: “ceres::GradientProblemSolver::Summary::message”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ceres::GradientProblemSolver::Summary”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
   
 D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem_solver.h(283,35): warning C4251: “ceres::GradientProblemSolver::Summary::iterations”:“std::vector<ceres::IterationSummary,std::allocator<ceres::IterationSummary>>”需要有 dll 接口以供“ceres::GradientProblemSolver::Summary”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+  (编译源文件“common.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
       参见“std::vector<ceres::IterationSummary,std::allocator<ceres::IterationSummary>>”的声明
   
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.h(135,12): warning C4251: “ArUcoStereo::m_ImgPathLeft”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ArUcoStereo”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\data\Dataset.h(725,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“common.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“common.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\TransformationEstimation.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“common.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“common.cpp”)
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(141,43): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(178,47): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244: “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:         with
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:         [
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:             _Tp=double
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:         ]
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:         and
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:         [
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:             _Tp=float
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(239,35): warning C4244:         ]
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244: “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:         with
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:         [
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:             _Tp=double
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:         ]
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:         and
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:         [
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:             _Tp=float
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(238,35): warning C4244:         ]
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244: “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:         with
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:         [
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:             _Tp=double
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:         ]
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:         and
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:         [
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:             _Tp=float
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(237,62): warning C4244:         ]
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\common.cpp(247,42): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267: “初始化”: 从“size_t”转换到“Size_T”，可能丢失数据
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:             Size_T=unsigned int
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         ]
+  (编译源文件“common.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(50,34):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVector<open3d::utility::optional<int64_t>,4>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1279,43):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorImpl<T>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(635,32):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateBase<T,false>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(387,40):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateCommon<T,void>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(173,14):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorBase<unsigned int>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(124,5):
+          在编译 类 模板 成员函数“open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase(void *,size_t)”时
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(188,50):
+              请参阅 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 中对 "open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(545,72):
+              请参阅 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 中对 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(649,70):
+              请参阅 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 中对 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1282,39):
+              请参阅 "open3d::core::SmallVector<int64_t,4>::SmallVector" 中对 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(91,18):
+              请参阅 "open3d::core::SizeVector::SizeVector" 中对 "open3d::core::SmallVector<int64_t,4>::SmallVector" 的第一个引用
+  
+  main.cpp
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(87,12): warning C4251: “ceres::GradientChecker::ProbeResults::residuals”:“Eigen::Matrix<double,-1,1,0,-1,1>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
+  (编译源文件“main.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\Matrix.h(178,7):
+      参见“Eigen::Matrix<double,-1,1,0,-1,1>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(97,25): warning C4251: “ceres::GradientChecker::ProbeResults::jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(100,25): warning C4251: “ceres::GradientChecker::ProbeResults::local_jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(103,25): warning C4251: “ceres::GradientChecker::ProbeResults::numeric_jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(106,25): warning C4251: “ceres::GradientChecker::ProbeResults::local_numeric_jacobians”:“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<ceres::Matrix,std::allocator<ceres::Matrix>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(113,17): warning C4251: “ceres::GradientChecker::ProbeResults::error_log”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ceres::GradientChecker::ProbeResults”的客户端使用
+  (编译源文件“main.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
   
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.h(136,12): warning C4251: “ArUcoStereo::m_ImgPathRight”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ArUcoStereo”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(143,45): warning C4251: “ceres::GradientChecker::local_parameterizations_”:“std::vector<const ceres::LocalParameterization *,std::allocator<const ceres::LocalParameterization *>>”需要有 dll 接口以供“ceres::GradientChecker”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<const ceres::LocalParameterization *,std::allocator<const ceres::LocalParameterization *>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_checker.h(145,33): warning C4251: “ceres::GradientChecker::finite_diff_cost_function_”:“std::unique_ptr<ceres::CostFunction,std::default_delete<ceres::CostFunction>>”需要有 dll 接口以供“ceres::GradientChecker”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      参见“std::unique_ptr<ceres::CostFunction,std::default_delete<ceres::CostFunction>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem.h(109,39): warning C4251: “ceres::GradientProblem::function_”:“std::unique_ptr<ceres::FirstOrderFunction,std::default_delete<ceres::FirstOrderFunction>>”需要有 dll 接口以供“ceres::GradientProblem”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      参见“std::unique_ptr<ceres::FirstOrderFunction,std::default_delete<ceres::FirstOrderFunction>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem.h(110,42): warning C4251: “ceres::GradientProblem::parameterization_”:“std::unique_ptr<ceres::LocalParameterization,std::default_delete<ceres::LocalParameterization>>”需要有 dll 接口以供“ceres::GradientProblem”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      参见“std::unique_ptr<ceres::LocalParameterization,std::default_delete<ceres::LocalParameterization>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem.h(111,29): warning C4251: “ceres::GradientProblem::scratch_”:“std::unique_ptr<double [],std::default_delete<double []>>”需要有 dll 接口以供“ceres::GradientProblem”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3486,7):
+      参见“std::unique_ptr<double [],std::default_delete<double []>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem_solver.h(254,37): warning C4251: “ceres::GradientProblemSolver::Options::callbacks”:“std::vector<ceres::IterationCallback *,std::allocator<ceres::IterationCallback *>>”需要有 dll 接口以供“ceres::GradientProblemSolver::Options”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<ceres::IterationCallback *,std::allocator<ceres::IterationCallback *>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem_solver.h(272,17): warning C4251: “ceres::GradientProblemSolver::Summary::message”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ceres::GradientProblemSolver::Summary”的客户端使用
+  (编译源文件“main.cpp”)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
   
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.h(145,27): warning C4251: “ArUcoStereo::m_board”:“cv::Ptr<cv::aruco::GridBoard>”需要有 dll 接口以供“ArUcoStereo”的客户端使用
-  (编译源文件“CalibrationByAruco.cpp”)
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\ceres\gradient_problem_solver.h(283,35): warning C4251: “ceres::GradientProblemSolver::Summary::iterations”:“std::vector<ceres::IterationSummary,std::allocator<ceres::IterationSummary>>”需要有 dll 接口以供“ceres::GradientProblemSolver::Summary”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      参见“std::vector<ceres::IterationSummary,std::allocator<ceres::IterationSummary>>”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\data\Dataset.h(725,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\TransformationEstimation.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.h(114,12): warning C4251: “CharArUco::m_ImgPathLeft”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“CharArUco”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.h(115,12): warning C4251: “CharArUco::m_ImgPathRight”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“CharArUco”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.h(165,12): warning C4251: “ArUcoStereo::m_ImgPathLeft”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ArUcoStereo”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.h(166,12): warning C4251: “ArUcoStereo::m_ImgPathRight”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“ArUcoStereo”的客户端使用
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.h(175,27): warning C4251: “ArUcoStereo::m_board”:“cv::Ptr<cv::aruco::GridBoard>”需要有 dll 接口以供“ArUcoStereo”的客户端使用
+  (编译源文件“main.cpp”)
       D:\env\vcpkg-2022.04.12\installed\x64-windows\include\opencv2\core\cvstd_wrapper.hpp(73,8):
       参见“cv::Ptr<cv::aruco::GridBoard>”的声明
   
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(24,22): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(25,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(215,97): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244: “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:         with
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:         [
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:             _Tp=double
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:         ]
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:         and
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:         [
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:             _Tp=float
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,108): warning C4244:         ]
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244: “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:         with
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:         [
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:             _Tp=double
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:         ]
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:         and
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:         [
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:             _Tp=float
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,85): warning C4244:         ]
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244: “参数”: 从“_Tp”转换到“_Tp”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:         with
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:         [
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:             _Tp=double
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:         ]
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:         and
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:         [
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:             _Tp=float
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(612,62): warning C4244:         ]
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(623,36): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(623,36): warning C4267:         with
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(623,36): warning C4267:         [
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(623,36): warning C4267:             _Ty=int32_t
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(623,36): warning C4267:         ]
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(625,46): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
-D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CalibrationByAruco.cpp(742,47): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\ThreeFrequencyUnwrapping.h(36,37): warning C4244: “return”: 从“double”转换到“const float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\main.cpp(81,46): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\main.cpp(81,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\main.cpp(202,46): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\main.cpp(202,34): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267: “初始化”: 从“size_t”转换到“Size_T”，可能丢失数据
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:             Size_T=unsigned int
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         ]
+  (编译源文件“main.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(50,34):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVector<open3d::utility::optional<int64_t>,4>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1279,43):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorImpl<T>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(635,32):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateBase<T,false>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(387,40):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateCommon<T,void>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(173,14):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorBase<unsigned int>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(124,5):
+          在编译 类 模板 成员函数“open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase(void *,size_t)”时
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(188,50):
+              请参阅 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 中对 "open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(545,72):
+              请参阅 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 中对 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(649,70):
+              请参阅 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 中对 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1282,39):
+              请参阅 "open3d::core::SmallVector<int64_t,4>::SmallVector" 中对 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(91,18):
+              请参阅 "open3d::core::SizeVector::SizeVector" 中对 "open3d::core::SmallVector<int64_t,4>::SmallVector" 的第一个引用
+  
     正在创建库 D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\x64\Release\MuliCamsCalibration_MuliAlgorithm.lib 和对象 D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\x64\Release\MuliCamsCalibration_MuliAlgorithm.exp
   正在生成代码
-  18 of 3176 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  7 of 3904 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    95 functions had inline decision re-evaluated but remain unchanged
+    234 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   MuliCamsCalibration_MuliAlgorithm.vcxproj -> D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\x64\Release\MuliCamsCalibration_MuliAlgorithm.exe
