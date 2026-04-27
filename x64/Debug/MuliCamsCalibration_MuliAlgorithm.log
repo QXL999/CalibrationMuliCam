@@ -1,0 +1,1247 @@
+﻿  CalibrationByCCTag.cpp
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(378,51): error C4996: 'stdext::checked_array_iterator<T*>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\data\Dataset.h(725,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\TransformationEstimation.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996: 'stdext::checked_array_iterator<T *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:             T=char
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1733,30):
+          查看对正在编译的 类 模板 实例化“fmt::v8::basic_memory_buffer<char,500,std::allocator<char>>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(778,18):
+          在编译 类 模板 成员函数“void fmt::v8::basic_memory_buffer<char,500,std::allocator<char>>::grow(size_t)”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(794,35):
+          查看对正在编译的函数 模板 实例化“stdext::checked_array_iterator<T *> fmt::v8::detail::make_checked<T>(T *,size_t)”的引用
+          with
+          [
+              T=char
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1970,30):
+          查看对正在编译的函数 模板 实例化“decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1446,26):
+          查看指向正在编译的变量模板“const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<char *> &>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1440,44):
+          查看指向正在编译的变量模板“const bool _Unwrappable_v<stdext::checked_array_iterator<char *> &,void>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1369,5):
+          查看指向正在编译的变量模板“const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<char *>,void>”的引用
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1436,93):
+          查看对正在编译的 别名 模板 实例化“std::_Iter_diff_t<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=char
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1245,55):
+          查看对正在编译的 类 模板 实例化“std::iterator_traits<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=char
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(496,26):
+          查看对正在编译的 类 模板 实例化“std::_Iterator_traits_base<_Iter,void>”的引用
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996: 'stdext::checked_array_iterator<T *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:             T=wchar_t
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1190,32):
+          查看对正在编译的 类 模板 实例化“fmt::v8::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(778,18):
+          在编译 类 模板 成员函数“void fmt::v8::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>::grow(size_t)”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(794,35):
+          查看对正在编译的函数 模板 实例化“stdext::checked_array_iterator<T *> fmt::v8::detail::make_checked<T>(T *,size_t)”的引用
+          with
+          [
+              T=wchar_t
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              T=wchar_t,
+              _InIt=wchar_t *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1970,30):
+          查看对正在编译的函数 模板 实例化“decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              _Iter=stdext::checked_array_iterator<wchar_t *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1446,26):
+          查看指向正在编译的变量模板“const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<wchar_t *> &>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1440,44):
+          查看指向正在编译的变量模板“const bool _Unwrappable_v<stdext::checked_array_iterator<wchar_t *> &,void>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1369,5):
+          查看指向正在编译的变量模板“const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<wchar_t *>,void>”的引用
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1436,93):
+          查看对正在编译的 别名 模板 实例化“std::_Iter_diff_t<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=wchar_t
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1245,55):
+          查看对正在编译的 类 模板 实例化“std::iterator_traits<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=wchar_t
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(496,26):
+          查看对正在编译的 类 模板 实例化“std::_Iterator_traits_base<_Iter,void>”的引用
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996: 'stdext::checked_array_iterator<T *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:             T=int
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1448,32):
+          在编译类模板“fmt::v8::detail::digit_grouping”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1491,47):
+          查看对正在编译的 类 模板 实例化“fmt::v8::basic_memory_buffer<int,500,std::allocator<int>>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(778,18):
+          在编译 类 模板 成员函数“void fmt::v8::basic_memory_buffer<int,500,std::allocator<int>>::grow(size_t)”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(794,35):
+          查看对正在编译的函数 模板 实例化“stdext::checked_array_iterator<T *> fmt::v8::detail::make_checked<T>(T *,size_t)”的引用
+          with
+          [
+              T=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<int *>,
+              T=int,
+              _InIt=int *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1970,30):
+          查看对正在编译的函数 模板 实例化“decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<int *>,
+              _Iter=stdext::checked_array_iterator<int *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1446,26):
+          查看指向正在编译的变量模板“const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<int *> &>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1440,44):
+          查看指向正在编译的变量模板“const bool _Unwrappable_v<stdext::checked_array_iterator<int *> &,void>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1369,5):
+          查看指向正在编译的变量模板“const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<int *>,void>”的引用
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1436,93):
+          查看对正在编译的 别名 模板 实例化“std::_Iter_diff_t<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=int
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1245,55):
+          查看对正在编译的 类 模板 实例化“std::iterator_traits<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=int
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(496,26):
+          查看对正在编译的 类 模板 实例化“std::_Iterator_traits_base<_Iter,void>”的引用
+          with
+          [
+              _Iter=stdext::checked_array_iterator<int *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996: 'stdext::checked_array_iterator<T *>::_Seek_to': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1971,10):
+          查看对正在编译的函数 模板 实例化“void std::_Seek_wrapped<_NoThrowFwdIt,char*>(_Iter &,_UIter &&)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *>,
+              _UIter=char *
+          ]
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267: “初始化”: 从“size_t”转换到“Size_T”，可能丢失数据
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:             Size_T=unsigned int
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         ]
+  (编译源文件“CalibrationByCCTag.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(50,34):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVector<open3d::utility::optional<int64_t>,4>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1279,43):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorImpl<T>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(635,32):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateBase<T,false>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(387,40):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateCommon<T,void>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(173,14):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorBase<unsigned int>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(124,5):
+          在编译 类 模板 成员函数“open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase(void *,size_t)”时
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(188,50):
+              请参阅 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 中对 "open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(545,72):
+              请参阅 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 中对 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(649,70):
+              请参阅 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 中对 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1282,39):
+              请参阅 "open3d::core::SmallVector<int64_t,4>::SmallVector" 中对 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(91,18):
+              请参阅 "open3d::core::SizeVector::SizeVector" 中对 "open3d::core::SmallVector<int64_t,4>::SmallVector" 的第一个引用
+  
+  CharArUco.cpp
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(3,21): error C2039: "filesystem": 不是 "std" 的成员
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\queue(32,1):
+      参见“std”的声明
+  
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(3,21): error C2878: “filesystem”: 该名称的命名空间或类不存在
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(8,5): error C2653: “fs”: 不是类或命名空间名称
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(8,14): error C2146: 语法错误: 缺少“;”(在标识符“dir_path”的前面)
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(8,14): error C3861: “dir_path”: 找不到标识符
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(9,10): error C2653: “fs”: 不是类或命名空间名称
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(9,21): error C2065: “dir_path”: 未声明的标识符
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(9,14): error C3861: “exists”: 找不到标识符
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(9,35): error C2653: “fs”: 不是类或命名空间名称
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(9,52): error C2065: “dir_path”: 未声明的标识符
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(9,39): error C3861: “is_directory”: 找不到标识符
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(16,30): error C2653: “fs”: 不是类或命名空间名称
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(16,22): error C2530: “entry”: 必须初始化引用
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(16,22): error C3531: “entry”: 类型包含“auto”的符号必须具有初始值设定项
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(16,28): error C2143: 语法错误: 缺少“;”(在“:”的前面)
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(16,53): error C2065: “dir_path”: 未声明的标识符
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(16,34): error C3861: “directory_iterator”: 找不到标识符
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(16,62): error C2143: 语法错误: 缺少“;”(在“)”的前面)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\MuliCamsCalibration_MuliAlgorithm\CharArUco.cpp(274,1): error C2653: “Charuco”: 不是类或命名空间名称
+  main.cpp
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(378,51): error C4996: 'stdext::checked_array_iterator<T*>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\data\Dataset.h(725,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\TransformationEstimation.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\t\pipelines\registration\RobustKernel.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996: 'stdext::checked_array_iterator<T *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:             T=char
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         ]
+  (编译源文件“main.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1733,30):
+          查看对正在编译的 类 模板 实例化“fmt::v8::basic_memory_buffer<char,500,std::allocator<char>>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(778,18):
+          在编译 类 模板 成员函数“void fmt::v8::basic_memory_buffer<char,500,std::allocator<char>>::grow(size_t)”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(794,35):
+          查看对正在编译的函数 模板 实例化“stdext::checked_array_iterator<T *> fmt::v8::detail::make_checked<T>(T *,size_t)”的引用
+          with
+          [
+              T=char
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1970,30):
+          查看对正在编译的函数 模板 实例化“decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1446,26):
+          查看指向正在编译的变量模板“const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<char *> &>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1440,44):
+          查看指向正在编译的变量模板“const bool _Unwrappable_v<stdext::checked_array_iterator<char *> &,void>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1369,5):
+          查看指向正在编译的变量模板“const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<char *>,void>”的引用
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1436,93):
+          查看对正在编译的 别名 模板 实例化“std::_Iter_diff_t<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=char
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1245,55):
+          查看对正在编译的 类 模板 实例化“std::iterator_traits<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=char
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(496,26):
+          查看对正在编译的 类 模板 实例化“std::_Iterator_traits_base<_Iter,void>”的引用
+          with
+          [
+              _Iter=stdext::checked_array_iterator<char *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996: 'stdext::checked_array_iterator<T *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:             T=wchar_t
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         ]
+  (编译源文件“main.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1190,32):
+          查看对正在编译的 类 模板 实例化“fmt::v8::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(778,18):
+          在编译 类 模板 成员函数“void fmt::v8::basic_memory_buffer<wchar_t,500,std::allocator<wchar_t>>::grow(size_t)”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(794,35):
+          查看对正在编译的函数 模板 实例化“stdext::checked_array_iterator<T *> fmt::v8::detail::make_checked<T>(T *,size_t)”的引用
+          with
+          [
+              T=wchar_t
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              T=wchar_t,
+              _InIt=wchar_t *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1970,30):
+          查看对正在编译的函数 模板 实例化“decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<wchar_t *>,
+              _Iter=stdext::checked_array_iterator<wchar_t *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1446,26):
+          查看指向正在编译的变量模板“const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<wchar_t *> &>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1440,44):
+          查看指向正在编译的变量模板“const bool _Unwrappable_v<stdext::checked_array_iterator<wchar_t *> &,void>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1369,5):
+          查看指向正在编译的变量模板“const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<wchar_t *>,void>”的引用
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1436,93):
+          查看对正在编译的 别名 模板 实例化“std::_Iter_diff_t<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=wchar_t
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1245,55):
+          查看对正在编译的 类 模板 实例化“std::iterator_traits<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=wchar_t
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(496,26):
+          查看对正在编译的 类 模板 实例化“std::_Iterator_traits_base<_Iter,void>”的引用
+          with
+          [
+              _Iter=stdext::checked_array_iterator<wchar_t *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:             T=wchar_t
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996: 'stdext::checked_array_iterator<T *>::checked_array_iterator': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:             T=int
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3): error C4996:         ]
+  (编译源文件“main.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(381,3):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1448,32):
+          在编译类模板“fmt::v8::detail::digit_grouping”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(1491,47):
+          查看对正在编译的 类 模板 实例化“fmt::v8::basic_memory_buffer<int,500,std::allocator<int>>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(778,18):
+          在编译 类 模板 成员函数“void fmt::v8::basic_memory_buffer<int,500,std::allocator<int>>::grow(size_t)”时
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(794,35):
+          查看对正在编译的函数 模板 实例化“stdext::checked_array_iterator<T *> fmt::v8::detail::make_checked<T>(T *,size_t)”的引用
+          with
+          [
+              T=int
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1341,31):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<int *>,
+              T=int,
+              _InIt=int *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1970,30):
+          查看对正在编译的函数 模板 实例化“decltype(auto) std::_Get_unwrapped_n<_NoThrowFwdIt&,__int64>(_Iter,const _Diff)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<int *>,
+              _Iter=stdext::checked_array_iterator<int *> &,
+              _Diff=__int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1446,26):
+          查看指向正在编译的变量模板“const bool _Unwrappable_for_offset_v<stdext::checked_array_iterator<int *> &>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1440,44):
+          查看指向正在编译的变量模板“const bool _Unwrappable_v<stdext::checked_array_iterator<int *> &,void>”的引用
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1369,5):
+          查看指向正在编译的变量模板“const bool _Allow_inheriting_unwrap_v<stdext::checked_array_iterator<int *>,void>”的引用
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,40):
+      模板实例化上下文(最早的实例化上下文)为
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1436,93):
+          查看对正在编译的 别名 模板 实例化“std::_Iter_diff_t<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=int
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1245,55):
+          查看对正在编译的 类 模板 实例化“std::iterator_traits<stdext::checked_array_iterator<T *>>”的引用
+          with
+          [
+              T=int
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(496,26):
+          查看对正在编译的 类 模板 实例化“std::_Iterator_traits_base<_Iter,void>”的引用
+          with
+          [
+              _Iter=stdext::checked_array_iterator<int *>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996: 'stdext::checked_array_iterator<T *>::iterator_category': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(476,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996: 'stdext::checked_array_iterator<T *>::value_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(477,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996: 'stdext::checked_array_iterator<T *>::difference_type': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(478,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996: 'stdext::checked_array_iterator<T *>::pointer': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(479,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996: 'stdext::checked_array_iterator<T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,40): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator(1483,35):
+      参见“stdext::checked_array_iterator”的声明
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996: 'stdext::checked_array_iterator<T *>::reference': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp(480,31): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996: 'stdext::checked_array_iterator<T *>::_Verify_offset': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1457,13): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996: 'stdext::checked_array_iterator<T *>::_Unwrapped': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:             T=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1458,42): error C4996:         ]
+  (编译源文件“main.cpp”)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996: 'stdext::checked_array_iterator<T *>::_Seek_to': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:             T=char
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13): error C4996:         ]
+  (编译源文件“main.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(1479,13):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\fmt\format.h(793,8):
+          查看对正在编译的函数 模板 实例化“_NoThrowFwdIt std::uninitialized_copy<T*,stdext::checked_array_iterator<T *>>(const _InIt,const _InIt,_NoThrowFwdIt)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              T=char,
+              _InIt=char *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1971,10):
+          查看对正在编译的函数 模板 实例化“void std::_Seek_wrapped<_NoThrowFwdIt,char*>(_Iter &,_UIter &&)”的引用
+          with
+          [
+              _NoThrowFwdIt=stdext::checked_array_iterator<char *>,
+              _Iter=stdext::checked_array_iterator<char *>,
+              _UIter=char *
+          ]
+  
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267: “初始化”: 从“size_t”转换到“Size_T”，可能丢失数据
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         with
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         [
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:             Size_T=unsigned int
+D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36): warning C4267:         ]
+  (编译源文件“main.cpp”)
+      D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(125,36):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(50,34):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVector<open3d::utility::optional<int64_t>,4>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1279,43):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorImpl<T>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(635,32):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateBase<T,false>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(387,40):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorTemplateCommon<T,void>”的引用
+          with
+          [
+              T=open3d::utility::optional<int64_t>
+          ]
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(173,14):
+          查看对正在编译的 类 模板 实例化“open3d::core::SmallVectorBase<unsigned int>”的引用
+          D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(124,5):
+          在编译 类 模板 成员函数“open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase(void *,size_t)”时
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(188,50):
+              请参阅 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 中对 "open3d::core::SmallVectorBase<unsigned int>::SmallVectorBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(545,72):
+              请参阅 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 中对 "open3d::core::SmallVectorTemplateCommon<T,void>::SmallVectorTemplateCommon" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(649,70):
+              请参阅 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 中对 "open3d::core::SmallVectorTemplateBase<T,true>::SmallVectorTemplateBase" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SmallVector.h(1282,39):
+              请参阅 "open3d::core::SmallVector<int64_t,4>::SmallVector" 中对 "open3d::core::SmallVectorImpl<T>::SmallVectorImpl" 的第一个引用
+          with
+          [
+              T=int64_t
+          ]
+              D:\env\vcpkg-2022.04.12\installed\x64-windows\include\open3d\core\SizeVector.h(91,18):
+              请参阅 "open3d::core::SizeVector::SizeVector" 中对 "open3d::core::SmallVector<int64_t,4>::SmallVector" 的第一个引用
+  
+  正在生成代码...
