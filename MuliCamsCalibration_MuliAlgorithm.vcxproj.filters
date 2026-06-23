@@ -27,9 +27,6 @@
     <ClCompile Include="ThreeFrequencyUnwrapping.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MultiCamJointOptimization.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="CalibrationByAruco.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -42,6 +39,9 @@
     <ClCompile Include="CalibrationByAprilTag.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CalibrationProjector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CharArUco.h">
@@ -51,9 +51,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ThreeFrequencyUnwrapping.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MultiCamJointOptimization.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="common.hpp">
@@ -68,8 +65,14 @@
     <ClInclude Include="CalibrationByAprilTag.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CalibrationProjector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CaliculatingUnWarpMap.cu" />
   </ItemGroup>
 </Project>

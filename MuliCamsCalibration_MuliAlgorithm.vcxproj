@@ -55,6 +55,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -72,8 +73,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\ThirdLibs\AprilTags\include\apriltag;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\ThirdLibs\AprilTags\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\include;D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\ThirdLibs\AprilTags\include\apriltag\common;D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\ThirdLibs\AprilTags\include\apriltag;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\lib\x64;D:\speedbot\software\Calibration_Algorithm\MuliCamsCalibration_MuliAlgorithm\ThirdLibs\AprilTags\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -139,10 +140,10 @@
     <ClCompile Include="CalibrationByAruco.cpp" />
     <ClCompile Include="CalibrationByCCTag.cpp" />
     <ClCompile Include="CalibrationByScreen.cpp" />
+    <ClCompile Include="CalibrationProjector.cpp" />
     <ClCompile Include="CharArUco.cpp" />
     <ClCompile Include="common.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MultiCamJointOptimization.cpp" />
     <ClCompile Include="ThreeFrequencyUnwrapping.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,17 +151,21 @@
     <ClInclude Include="CalibrationByAruco.h" />
     <ClInclude Include="CalibrationByCCTag.h" />
     <ClInclude Include="CalibrationByScreen.h" />
+    <ClInclude Include="CalibrationProjector.h" />
     <ClInclude Include="CharArUco.h" />
     <ClInclude Include="common.hpp" />
-    <ClInclude Include="MultiCamJointOptimization.h" />
     <ClInclude Include="ThreeFrequencyUnwrapping.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CaliculatingUnWarpMap.cu" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\vcpkg.D.env.vcpkg2022.04.12.1.0.0\build\native\vcpkg.D.env.vcpkg2022.04.12.targets" Condition="Exists('..\packages\vcpkg.D.env.vcpkg2022.04.12.1.0.0\build\native\vcpkg.D.env.vcpkg2022.04.12.targets')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.targets" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
